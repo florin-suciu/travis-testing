@@ -17,11 +17,9 @@ def count(nr, raise_exception):
 
 if __name__ == '__main__':
     print('Counting to {}.'.format(COUNT_TO))
-    raise_exc = False
     threads = []
     for index in range(THREAD_COUNT):
-        if index == 1:
-            raise_exc = True
+        raise_exc = False if index != 0 else True
         t = threading.Thread(target=count, args=(COUNT_TO, raise_exc))
         threads.append(t)
         t.start()
