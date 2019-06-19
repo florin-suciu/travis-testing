@@ -1,6 +1,6 @@
 import time
 
-COUNT_TO = 100
+COUNT_TO = 25
 SLEEP_TIME = 1
 
 
