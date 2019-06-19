@@ -1,3 +1,4 @@
+import os
 import time
 
 COUNT_TO = 25
@@ -13,4 +14,5 @@ def count(nr):
 if __name__ == '__main__':
     print('Counting to {}.'.format(COUNT_TO))
     count(COUNT_TO)
+    print('Secret is: {}.'.format(os.getenv('SECRET')))
     print('Done counting.')
