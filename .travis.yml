@@ -11,6 +11,9 @@ install:
   - pip install -r requirements.txt
 
 script:
+  - do_stuff_1.sh &
+  - do_stuff_2.sh &
+  - wait $(jobs -p)
   - python do_stuff.py
 
 after_success:
