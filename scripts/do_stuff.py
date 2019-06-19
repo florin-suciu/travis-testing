@@ -16,3 +16,4 @@ if __name__ == '__main__':
     count(COUNT_TO)
     print('Secret is: {}.'.format(os.getenv('SECRET')))
     print('Done counting.')
+    raise Exception('something')
