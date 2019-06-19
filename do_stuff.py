@@ -1,8 +1,12 @@
+import time
+
 COUNT_TO = 100
+SLEEP_TIME = 1
 
 
 def count(nr):
     for i in range(nr):
+        time.sleep(SLEEP_TIME)
         print(i)
 
 
